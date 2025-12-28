@@ -1,0 +1,13 @@
+name: hello world
+
+on:
+   schedule:
+     - cron: "* */1 * * *"
+jobs:
+    hello-world:
+        runs-on: ubunto-22.04
+        container:
+                  imaage: rkrispin/data-pipeline-automation-with-github-action:prod
+        steps:
+             - name: print-hello-world 
+               run: echo "hello world"
