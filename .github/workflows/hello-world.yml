@@ -2,12 +2,12 @@ name: hello world
 
 on:
    schedule:
-     - cron: "* */1 * * *"
+     - cron: "0 */1 * * *"
 jobs:
     hello-world:
         runs-on: ubunto-22.04
         container:
-                  imaage: rkrispin/data-pipeline-automation-with-github-action:prod
+                  image: rkrispin/data-pipeline-automation-with-github-actions:prod
         steps:
              - name: print-hello-world 
                run: echo "hello world"
