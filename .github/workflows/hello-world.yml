@@ -5,7 +5,7 @@ on:
      - cron: "0 */1 * * *"
 jobs:
     hello-world:
-        runs-on: ubunto-22.04
+        runs-on: ubuntu-22.04
         container:
                   image: rkrispin/data-pipeline-automation-with-github-actions:prod
         steps:
